@@ -5,6 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 class AuthorizedView(LoginRequiredMixin, TemplateView):
     template_name = "myview.html"
+    login_url = 'accounts/login.html'
 
 # Create your views here.
 
